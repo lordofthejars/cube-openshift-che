@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-@Library('github.com/bartoszmajsak/fabric8-pipeline-library@master')
+@Library('github.com/bartoszmajsak/fabric8-pipeline-library@cube-properties')
 def canaryVersion = "1.0.${env.BUILD_NUMBER}"
 def utils = new io.fabric8.Utils()
 mavenNode {
