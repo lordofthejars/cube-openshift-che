@@ -5,7 +5,7 @@ def utils = new io.fabric8.Utils()
 mavenNode {
   checkout scm
   if (utils.isCI()){
-
+    echo 'Running IT tests'
     mavenCI{}
     
   } else if (utils.isCD()){
