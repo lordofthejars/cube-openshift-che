@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(Arquillian.class)
 @OpenShiftResource("classpath:hello-route.yaml")
-public class HelloWorldOpenShiftResourcesIT {
+public class HelloWorldOpenShiftResourcesTest {
 
     @RouteURL("hello-world")
     @AwaitRoute

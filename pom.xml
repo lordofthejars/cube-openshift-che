@@ -13,7 +13,7 @@
     <dependency>
       <groupId>org.arquillian.cube</groupId>
       <artifactId>arquillian-cube-openshift-starter</artifactId>
-      <version>1.15.0</version>
+      <version>1.15.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -30,32 +30,4 @@
     </dependency>
   </dependencies>
 
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>io.fabric8</groupId>
-        <artifactId>fabric8-maven-plugin</artifactId>
-        <version>3.5.28</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>resource</goal>
-              <goal>build</goal>
-            </goals>
-          </execution>
-        </executions>
-      
-        <configuration>
-          <resources>
-            <labels>
-              <all>
-                <space>CubeResources</space>
-              </all>
-            </labels>
-          </resources>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
