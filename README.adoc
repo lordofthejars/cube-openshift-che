@@ -1,0 +1,11 @@
+= Cube OpenShift Che
+
+To make this test run from IDE or Maven run you need to follow next steps:
+
+Open `src/test/resources/arquillian.xml` and change `namespace.use.existing` property's value to your username.
+
+Go to OpenShift Online (OSO) console click on your username, and select `Copy Login Command`.
+
+Finally go to terminal and run copied `oc login` command.
+
+After this point you can run tests either from IDE or Maven.
